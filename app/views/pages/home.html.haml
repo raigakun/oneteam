@@ -1,2 +1,6 @@
+- if user_signed_in?
+  = link_to "サインアウト", destroy_user_session_path, method: :delete
+
+
 %p このページは仮です。
 = link_to "仮ボタン", "#", class: "btn btn-primary"

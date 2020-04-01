@@ -8,12 +8,13 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    = render 'partial/navbar' if current_user
-    - if flash[:notice]
-      .alert.alert-info
-        = flash[:notice]
-    - if flash[:alert]
-      .alert.alert-danger
-        = flash[:alert]
-
-    = yield
+    #wrapper
+      = render 'partial/navbar' if current_user
+      - if flash[:notice]
+        .alert.alert-info
+          = flash[:notice]
+      - if flash[:alert]
+        .alert.alert-danger
+          = flash[:alert]
+      = yield
+      = render 'partial/footer'
