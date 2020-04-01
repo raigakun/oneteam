@@ -1,0 +1,11 @@
+%nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  .container
+    = link_to "", root_path, class: "navbar__brand navbar__mainLogo"
+    %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    .collapse.navbar-collapse#navbarSupportedContent
+      %ul.navbar-nav.ml-md-auto.align-items-center
+        %li
+          = link_to "投稿","#",class:"btn btn-primary"
+        %li
+          = link_to "", "#",class:"nav-link commonNavIcon profile-icon"
