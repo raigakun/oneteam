@@ -1,0 +1,23 @@
+.main
+  .card.devise-card
+    .form-wrap
+      .form-group.text-center
+        %h2.logo-img.mx-auto
+        %p.text-secondary 応援しているチームや選手・HCが登録できるよ！
+      -# = form_with scope: @favorite, as: @favorite, local:true do |f|
+      = form_for @favorite do |f|
+        .form-group
+          = f.label :team
+          = f.text_field :team, autofocus: true, placeholder: "好きなチームは？", class: "form-control"
+        .form-group
+          = f.label :player
+          = f.text_field :player, autofocus: true, placeholder: "好きな選手は？", class: "form-control"
+        .form-group
+          = f.label :headcoach
+          = f.text_field :headcoach, autofocus: true, placeholder: "好きなHCやコーチは？", class: "form-control"
+        .actions
+          = f.submit "登録する", class: "btn btn-primary w-100"
+      %br/
+      %p.devise-link
+        アカウントをお持ちですか？
+        = link_to "サインインする", new_user_session_path 
