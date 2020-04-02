@@ -7,6 +7,8 @@
 
 .card-wrap {
   margin: 40px 0px;
+  border-radius: 60%;
+  margin-top: 80px;
 }
 
 .no-text-decoration:hover {
@@ -115,3 +117,21 @@
   margin: 5px 0 0 10px;
   background-size: 11px !important;
 }
+
+.card2 {
+  border-radius: 60%;
+}
+
+.card-header2 {
+  margin-top: 8px;
+  padding: 0 ;
+  margin: 0 auto;
+  background-color: white;
+  border-bottom: 0 solid ;
+}
+
+
+.mb-3-1 {
+  text-align: center;
+}
+
