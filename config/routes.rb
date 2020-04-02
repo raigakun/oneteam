@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:show]
 
-  resources :posts, only: [:index, :new, :create] do
+  resources :posts, only: [:index, :new, :create, :show, :destroy] do
     resources :photos, only: [:create]
   end
 
