@@ -57,6 +57,8 @@
 
 .card-right {
   padding: 20px;
+  background-color: white;
+  margin-top: 80px;
 }
 
 .card-right-name {
@@ -73,7 +75,7 @@
 }
 
 .postShow-wrap {
-  border: 1px solid #e6e6e6;
+  // border: 1px solid #e6e6e6;
   margin: 40px;
 }
 
@@ -135,3 +137,14 @@
   text-align: center;
 }
 
+.row {
+  margin-top: 20px;
+}
+
+.welcome {
+  margin-top: 200px;
+}
+
+.card-left{
+  margin-top: 80px;
+}

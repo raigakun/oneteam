@@ -20,7 +20,7 @@
                 = link_to "サインアウト", destroy_user_session_path, method: :delete, class: "list-group-item list-group-item-action"
                 = link_to "キャンセル", "#", class: "list-group-item list-group-item-action", "data-dismiss": "modal"
       - if @user == current_user
-        .row
+        .row0
           %p
             = @user.email
       - if @favorite.present?
