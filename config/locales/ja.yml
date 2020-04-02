@@ -95,3 +95,17 @@ ja:
       not_saved:
         one: "エラーが発生したため %{resource} は保存されませんでした:"
         other: "%{count} 件のエラーが発生したため %{resource} は保存されませんでした:"
+  activerecord:
+    models:
+      user: ユーザー
+      favorite: Support Info
+    attributes:
+      user:
+        nickname: ニックネーム
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: 確認用パスワード
+      favorite:
+        team: 応援しているチーム
+        player: 応援している選手
+        headcoach: 応援しているヘッドコーチ等
