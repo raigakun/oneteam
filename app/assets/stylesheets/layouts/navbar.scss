@@ -1,7 +1,11 @@
 .navbar {
-  background-color: #fff;
+  background-image: image-url("nav5.png");
   border-bottom: 1px solid rgba(0, 0, 0, .0975);
   height: 77px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  margin-bottom: 400px;
   &__brand {
     height: 25px;
     width: 200px;

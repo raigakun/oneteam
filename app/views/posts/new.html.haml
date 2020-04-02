@@ -2,7 +2,7 @@
   .col-xl-7.col-lg-8.col-md-10.col-sm-11.post-card
     .card
       .card-header
-        投稿画面
+        投稿できますよ！
       .card-body
         = form_with model: @post, class: "upload-images p-0 border-0" do |f|
           .form-group.row.mt-2
@@ -13,4 +13,5 @@
           .mb-3
             = f.fields_for :photos do |i|
               = i.file_field :image
-          = f.submit "投稿する", class: "btn btn-primary"
+          .mb-3-1
+            = f.submit "投稿する", class: "btn btn-primary"

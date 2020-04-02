@@ -26,7 +26,8 @@
       - if @favorite.present?
         .row4
           %h2.row4__1 Support Info
-          = link_to "Support Infoを編集", edit_favorite_path, class: "btn btn-outline-dark common-btn edit-profile-btn"
+          - if @user == current_user
+            = link_to "Support Infoを編集", edit_favorite_path, class: "btn btn-outline-dark common-btn edit-profile-btn"
         .row0
           .row0__1
           応援しているチーム
@@ -48,12 +49,9 @@
             %h5
               = @favorite.headcoach
 
-%h1 トップページ
-- if user_signed_in?
-  %h2 ログインしています
-  = link_to "ログアウト", destroy_user_session_path, method: :delete
-- else
-  %h2 ログインしていません
-  = link_to "新規登録", new_user_registration_path
-  = link_to "ログイン", new_user_session_path
+    - if @user == current_user
+      .explain 
+        設定ボタンからログアウトできます！
+    
+      
 
