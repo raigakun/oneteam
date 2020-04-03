@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: oneteam_production
-  username: oneteam
-  password: <%= ENV['ONETEAM_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
