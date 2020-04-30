@@ -74,6 +74,7 @@ gem 'pry-rails'
 gem 'carrierwave', '~> 2.0'
 gem 'fog-aws'
 gem "mini_magick"
+gem 'rspec-rails'
 
 group :production do
   gem 'unicorn', '5.4.1'
