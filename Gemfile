@@ -76,6 +76,7 @@ gem 'fog-aws'
 gem "mini_magick"
 gem 'rspec-rails'
 gem 'factory_bot_rails'
+gem 'rails-controller-testing'
 
 group :production do
   gem 'unicorn', '5.4.1'
