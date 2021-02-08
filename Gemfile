@@ -71,7 +71,7 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'devise'
 gem 'pry-rails'
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.1'
 gem 'fog-aws'
 gem "mini_magick"
 gem 'rspec-rails'
